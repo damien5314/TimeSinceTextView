@@ -1,0 +1,24 @@
+<resources>
+  <string name="timespan_years">%s year ago</string>
+  <string name="timespan_months">%s month ago</string>
+  <string name="timespan_weeks">%s week ago</string>
+  <string name="timespan_days">%s day ago</string>
+  <string name="timespan_hours">%s hour ago</string>
+  <string name="timespan_minutes">%s minute ago</string>
+  <string name="timespan_seconds">%s second ago</string>
+  <string name="timespan_years_plural">%s years ago</string>
+  <string name="timespan_months_plural">%s months ago</string>
+  <string name="timespan_weeks_plural">%s weeks ago</string>
+  <string name="timespan_days_plural">%s days ago</string>
+  <string name="timespan_hours_plural">%s hours ago</string>
+  <string name="timespan_minutes_plural">%s minutes ago</string>
+  <string name="timespan_seconds_plural">%s seconds ago</string>
+  <string name="timespan_year_abbr">%syr</string>
+  <string name="timespan_months_abbr">%smo</string>
+  <string name="timespan_weeks_abbr">%swk</string>
+  <string name="timespan_days_abbr">%sd</string>
+  <string name="timespan_hours_abbr">%sh</string>
+  <string name="timespan_minutes_abbr">%sm</string>
+  <string name="timespan_seconds_abbr">%ss</string>
+  <string name="timespan_now">just now</string>
+</resources>
