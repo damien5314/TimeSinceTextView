@@ -24,9 +24,24 @@ To get an abbreviated form of the converted text, add `app:abbreviated="true"` t
       android:layout_height="wrap_content"
       app:abbreviated="true" />
 
-To add to your project, simply add the following line to your `dependencies` block in your build.gradle file.
+## Gradle
 
-    compile 'com.github.damien5314:TimeSinceTextView:1.0.0'
+Add the jitpack distribution URL to your root build.gradle,
+
+    allprojects {
+      repositories {
+        ...
+        maven { url "https://jitpack.io" }
+      }
+    }
+    
+as well as the dependency in your module build.gradle file.
+
+    dependencies {
+      ...
+      compile 'com.github.damien5314:TimeSinceTextView:1.0.0'
+    }
+
 
 ## Screenshot
 ![Screenshot](/screenshots/1453502946.png)
