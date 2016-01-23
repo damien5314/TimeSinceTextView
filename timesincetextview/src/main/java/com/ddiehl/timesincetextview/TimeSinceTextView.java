@@ -56,14 +56,14 @@ public class TimeSinceTextView extends TextView {
   }
 
   public void setDate(Date date) {
-    setText(getFormattedDateString(date.getTime() / 1000));
+    setText(getFormattedDateString(date.getTime() / 1000, mAbbreviated, getContext()));
   }
 
   public void setDate(long utc) {
-    setText(getFormattedDateString(utc));
+    setText(getFormattedDateString(utc, mAbbreviated, getContext()));
   }
 
-  private String getFormattedDateString(long utc) {
+  public static String getFormattedDateString(long utc, boolean abbreviated, Context context) {
     long currentTime = System.currentTimeMillis();
     long diffMs = currentTime - utc * 1000;
 
@@ -77,13 +77,12 @@ public class TimeSinceTextView extends TextView {
 
     long[] units = new long[] { years, months, weeks, days, hours, minutes, seconds };
 
-    Context context = getContext();
     String output = "";
     long unit = 0;
     for (int i = 0; i < units.length; i++) {
       unit = units[i];
       if (unit > 0) {
-        if (mAbbreviated) {
+        if (abbreviated) {
           output = context.getString(TIMESPAN_IDS_ABBR[i]);
         } else if (unit == 1) {
           output = context.getString(TIMESPAN_IDS[i]);
