@@ -26,6 +26,8 @@ To get an abbreviated form of the converted text, add `app:abbreviated="true"` t
 
 ## Gradle
 
+[![Release](https://jitpack.io/v/damien5314/TimeSinceTextView.svg)](https://jitpack.io/#damien5314/TimeSinceTextView)
+
 Add the jitpack distribution URL to your root build.gradle,
 
     allprojects {
