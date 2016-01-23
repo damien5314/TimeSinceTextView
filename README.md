@@ -8,15 +8,21 @@ e.g. If the current timestamp is Unix 1453503166 and the time passed to `setDate
 Simply declare a `TimeSinceTextView` in XML or create one in code.
 
     <com.ddiehl.timesincetextview.TimeSinceTextView
-      android:id="@+id/comment_timestamp"
+      android:id="@+id/timestamp"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+      android:layout_height="wrap_content" />
   
 Then call `setDate(Date)` or `setDate(long)` with a Unix timestamp, and the text will be automatically generated and set to the view.
 
     ((TimeSinceTextView) findViewById(R.id.timestamp)).setDate(1452827942);
 
-Abbreviated
+To get an abbreviated form of the converted text, add `app:abbreviated="true"` to your XML layout.
+
+    <com.ddiehl.timesincetextview.TimeSinceTextView
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:abbreviated="true" />
 
 To add to your project, simply add the following line to your `dependencies` block in your build.gradle file.
 
