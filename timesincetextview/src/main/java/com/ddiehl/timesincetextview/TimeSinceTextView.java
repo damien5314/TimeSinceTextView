@@ -30,7 +30,7 @@ public class TimeSinceTextView extends TextView {
   };
 
   private static final int[] TIMESPAN_IDS_ABBR = {
-      R.string.timespan_year_abbr,
+      R.string.timespan_years_abbr,
       R.string.timespan_months_abbr,
       R.string.timespan_weeks_abbr,
       R.string.timespan_days_abbr,
@@ -64,10 +64,13 @@ public class TimeSinceTextView extends TextView {
   }
 
   public static String getFormattedDateString(long utc, boolean abbreviated, Context context) {
-    long currentTime = System.currentTimeMillis();
-    long diffMs = currentTime - utc * 1000;
+    long currentTime = System.currentTimeMillis() / 1000;
+    return getFormattedDateString(utc, currentTime, abbreviated, context);
+  }
 
-    long seconds = diffMs / 1000;
+  protected static String getFormattedDateString(
+      long start, long end, boolean abbreviated, Context context) {
+    long seconds = end - start;
     long minutes = seconds / 60;
     long hours = minutes / 60;
     long days = hours / 24;

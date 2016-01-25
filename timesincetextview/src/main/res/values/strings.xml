@@ -13,7 +13,7 @@
   <string name="timespan_hours_plural">%s hours ago</string>
   <string name="timespan_minutes_plural">%s minutes ago</string>
   <string name="timespan_seconds_plural">%s seconds ago</string>
-  <string name="timespan_year_abbr">%syr</string>
+  <string name="timespan_years_abbr">%syr</string>
   <string name="timespan_months_abbr">%smo</string>
   <string name="timespan_weeks_abbr">%swk</string>
   <string name="timespan_days_abbr">%sd</string>
