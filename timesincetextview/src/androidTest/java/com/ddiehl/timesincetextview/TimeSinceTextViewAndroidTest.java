@@ -62,7 +62,7 @@ public class TimeSinceTextViewAndroidTest {
   }
 
   @Test
-  public void getFormattedDateString_10seconds() {
+  public void getFormattedDateString_11seconds() {
     assertThat(
         TimeSinceTextView.getFormattedDateString(
             mTime - 11, mTime, false, mContext),
