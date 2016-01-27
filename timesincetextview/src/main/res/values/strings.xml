@@ -1,24 +1,59 @@
 <resources>
-  <string name="timespan_years">%s year ago</string>
-  <string name="timespan_months">%s month ago</string>
-  <string name="timespan_weeks">%s week ago</string>
-  <string name="timespan_days">%s day ago</string>
-  <string name="timespan_hours">%s hour ago</string>
-  <string name="timespan_minutes">%s minute ago</string>
-  <string name="timespan_seconds">%s second ago</string>
-  <string name="timespan_years_plural">%s years ago</string>
-  <string name="timespan_months_plural">%s months ago</string>
-  <string name="timespan_weeks_plural">%s weeks ago</string>
-  <string name="timespan_days_plural">%s days ago</string>
-  <string name="timespan_hours_plural">%s hours ago</string>
-  <string name="timespan_minutes_plural">%s minutes ago</string>
-  <string name="timespan_seconds_plural">%s seconds ago</string>
-  <string name="timespan_years_abbr">%syr</string>
-  <string name="timespan_months_abbr">%smo</string>
-  <string name="timespan_weeks_abbr">%swk</string>
-  <string name="timespan_days_abbr">%sd</string>
-  <string name="timespan_hours_abbr">%sh</string>
-  <string name="timespan_minutes_abbr">%sm</string>
-  <string name="timespan_seconds_abbr">%ss</string>
   <string name="timespan_now">just now</string>
+  <plurals name="timespan_years">
+    <item quantity="one">%d year ago</item>
+    <item quantity="other">%d years ago</item>
+  </plurals>
+  <plurals name="timespan_months">
+    <item quantity="one">%d month ago</item>
+    <item quantity="other">%d months ago</item>
+  </plurals>
+  <plurals name="timespan_weeks">
+    <item quantity="one">%d week ago</item>
+    <item quantity="other">%d weeks ago</item>
+  </plurals>
+  <plurals name="timespan_days">
+    <item quantity="one">%d day ago</item>
+    <item quantity="other">%d days ago</item>
+  </plurals>
+  <plurals name="timespan_hours">
+    <item quantity="one">%d hour ago</item>
+    <item quantity="other">%d hours ago</item>
+  </plurals>
+  <plurals name="timespan_minutes">
+    <item quantity="one">%d minute ago</item>
+    <item quantity="other">%d minutes ago</item>
+  </plurals>
+  <plurals name="timespan_seconds">
+    <item quantity="one">%d second ago</item>
+    <item quantity="other">%d seconds ago</item>
+  </plurals>
+  <plurals name="timespan_years_abbr">
+    <item quantity="one">%dyr</item>
+    <item quantity="other">%dyr</item>
+  </plurals>
+  <plurals name="timespan_months_abbr">
+    <item quantity="one">%dmo</item>
+    <item quantity="other">%dmo</item>
+  </plurals>
+  <plurals name="timespan_weeks_abbr">
+    <item quantity="one">%dwk</item>
+    <item quantity="other">%dwk</item>
+  </plurals>
+  <plurals name="timespan_days_abbr">
+    <item quantity="one">%dd</item>
+    <item quantity="other">%dd</item>
+  </plurals>
+  <plurals name="timespan_hours_abbr">
+    <item quantity="one">%dh</item>
+    <item quantity="other">%dh</item>
+  </plurals>
+  <plurals name="timespan_minutes_abbr">
+    <item quantity="one">%dm</item>
+    <item quantity="other">%dm</item>
+  </plurals>
+  <plurals name="timespan_seconds_abbr">
+    <item quantity="one">%ds</item>
+    <item quantity="other">%ds</item>
+  </plurals>
 </resources>

@@ -8,36 +8,23 @@ import java.util.Date;
 
 public class TimeSinceTextView extends TextView {
   private static final int[] TIMESPAN_IDS = {
-      R.string.timespan_years,
-      R.string.timespan_months,
-      R.string.timespan_weeks,
-      R.string.timespan_days,
-      R.string.timespan_hours,
-      R.string.timespan_minutes,
-      R.string.timespan_seconds,
-      R.string.timespan_now
-  };
-
-  private static final int[] TIMESPAN_IDS_PLURAL = {
-      R.string.timespan_years_plural,
-      R.string.timespan_months_plural,
-      R.string.timespan_weeks_plural,
-      R.string.timespan_days_plural,
-      R.string.timespan_hours_plural,
-      R.string.timespan_minutes_plural,
-      R.string.timespan_seconds_plural,
-      R.string.timespan_now
+      R.plurals.timespan_years,
+      R.plurals.timespan_months,
+      R.plurals.timespan_weeks,
+      R.plurals.timespan_days,
+      R.plurals.timespan_hours,
+      R.plurals.timespan_minutes,
+      R.plurals.timespan_seconds
   };
 
   private static final int[] TIMESPAN_IDS_ABBR = {
-      R.string.timespan_years_abbr,
-      R.string.timespan_months_abbr,
-      R.string.timespan_weeks_abbr,
-      R.string.timespan_days_abbr,
-      R.string.timespan_hours_abbr,
-      R.string.timespan_minutes_abbr,
-      R.string.timespan_seconds_abbr,
-      R.string.timespan_now
+      R.plurals.timespan_years_abbr,
+      R.plurals.timespan_months_abbr,
+      R.plurals.timespan_weeks_abbr,
+      R.plurals.timespan_days_abbr,
+      R.plurals.timespan_hours_abbr,
+      R.plurals.timespan_minutes_abbr,
+      R.plurals.timespan_seconds_abbr
   };
 
   private static int NOW_THRESHOLD_SECONDS = 10;
@@ -68,36 +55,32 @@ public class TimeSinceTextView extends TextView {
     return getFormattedDateString(utc, currentTime, abbreviated, context);
   }
 
-  protected static String getFormattedDateString(
+  public static String getFormattedDateString(
       long start, long end, boolean abbreviated, Context context) {
-    long seconds = end - start;
-    long minutes = seconds / 60;
-    long hours = minutes / 60;
-    long days = hours / 24;
-    long weeks = days / 7;
-    long months = days / 30;
-    long years = days / 365;
-
-    long[] units = new long[] { years, months, weeks, days, hours, minutes, seconds };
+    int seconds = (int) (end - start);
+    int[] units = new int[] {
+        seconds / 31536000, // years
+        seconds / 2592000, // months
+        seconds / 604800, // weeks
+        seconds / 86400, // days
+        seconds / 3600, // hours
+        seconds / 60, // minutes
+        seconds };
 
     String output = "";
-    long unit = 0;
+    int unit = 0;
     for (int i = 0; i < units.length; i++) {
       unit = units[i];
       if (unit > 0) {
-        if (abbreviated) {
-          output = context.getString(TIMESPAN_IDS_ABBR[i]);
-        } else if (unit == 1) {
-          output = context.getString(TIMESPAN_IDS[i]);
-        } else {
-          output = context.getString(TIMESPAN_IDS_PLURAL[i]);
-        }
+        output = context.getResources().getQuantityString(
+            abbreviated ? TIMESPAN_IDS_ABBR[i] : TIMESPAN_IDS[i],
+            unit, unit);
         break;
       }
     }
 
     if (unit == seconds && seconds <= NOW_THRESHOLD_SECONDS) {
-      output = context.getString(TIMESPAN_IDS[TIMESPAN_IDS.length - 1]);
+      output = context.getString(R.string.timespan_now);
     }
 
     return String.format(output, unit);
