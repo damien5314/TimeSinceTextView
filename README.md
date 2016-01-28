@@ -1,8 +1,6 @@
 # TimeSinceTextView
 
-This is a subclass of android.widget.TextView which exposes a method `setDate()` which can take either a Unix timestamp (`long`) or `java.util.Date`. The view converts the date into a String which describes the date in terms of time since.
-
-e.g. If the current timestamp is Unix 1453503166 and we call `timeSinceTextView.setDate(1453503116)`, "50 seconds ago" is displayed.
+This is a subclass of android.widget.TextView which exposes a method `setDate()` that accepts a `long` Unix timestamp or `java.util.Date`. The view converts the date into a String which describes the date in terms of time since that timestamp. For example, if the current timestamp is Unix 1453503166 and we call `timeSinceTextView.setDate(1453503116)`, "50 seconds ago" is displayed.
 
 ## Comparison to DateUtils.getRelativeTimeSpanString
 
@@ -46,7 +44,7 @@ as well as the dependency in your module build.gradle file.
 
     dependencies {
       ...
-      compile 'com.github.damien5314:TimeSinceTextView:1.0.0'
+      compile 'com.github.damien5314:TimeSinceTextView:1.1.0'
     }
 
 
