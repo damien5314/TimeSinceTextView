@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="timespan_now">just now</string>
   <plurals name="timespan_years">
