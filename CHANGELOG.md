@@ -5,7 +5,7 @@ Version 1.1.1 *(2016-02-07)*
 ----------------------------------
 * Added Russian translation
 
-Version 1.1.0 *(2016-01-22)*
+Version 1.1.0 *(2016-01-27)*
 ----------------------------------
 * Added Simplified Chinese translation (thanks @jewelzqiu!)
 * Switched from simple string resources to plural resources which can be more accurately localized in all languages.
