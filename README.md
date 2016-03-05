@@ -12,22 +12,28 @@ I actually wrote this library before I knew about [DateUtils.getRelativeTimeSpan
 
 Simply declare a `TimeSinceTextView` in XML or create one in code.
 
-    <com.ddiehl.timesincetextview.TimeSinceTextView
-      android:id="@+id/timestamp"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+```xml
+<com.ddiehl.timesincetextview.TimeSinceTextView
+  android:id="@+id/timestamp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" />
+```
   
 Then call `setDate(Date)` or `setDate(long)` with a Unix timestamp, and the text will be automatically generated and set to the view.
 
-    ((TimeSinceTextView) findViewById(R.id.timestamp)).setDate(1452827942);
+```java
+((TimeSinceTextView) findViewById(R.id.timestamp)).setDate(1452827942);
+```
 
 To get an abbreviated form of the converted text, add `app:abbreviated="true"` to your XML layout.
 
-    <com.ddiehl.timesincetextview.TimeSinceTextView
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:abbreviated="true" />
+```xml
+<com.ddiehl.timesincetextview.TimeSinceTextView
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  app:abbreviated="true" />
+```
 
 ## Gradle
 
@@ -35,19 +41,22 @@ To get an abbreviated form of the converted text, add `app:abbreviated="true"` t
 
 Add the jitpack distribution URL to your root build.gradle,
 
-    allprojects {
-      repositories {
-        ...
-        maven { url "https://jitpack.io" }
-      }
-    }
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url "https://jitpack.io" }
+  }
+}
+```
     
 as well as the dependency in your module build.gradle file.
-
-    dependencies {
-      ...
-      compile 'com.github.damien5314:TimeSinceTextView:1.1.1'
-    }
+```gradle
+dependencies {
+  ...
+  compile 'com.github.damien5314:TimeSinceTextView:1.1.1'
+}
+```
 
 
 ## Screenshot
