@@ -30,31 +30,31 @@
     <item quantity="other">hace %d segundos</item>
   </plurals>
   <plurals name="timespan_years_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dг</item>
-    <item quantity="other">%dг</item>
+    <item quantity="one">%da</item>
+    <item quantity="other">%da</item>
   </plurals>
   <plurals name="timespan_months_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dмес</item>
-    <item quantity="other">%dмес</item>
+    <item quantity="one">%dms</item>
+    <item quantity="other">%dms</item>
   </plurals>
   <plurals name="timespan_weeks_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dнед</item>
-    <item quantity="other">%dнед</item>
+    <item quantity="one">%dsem</item>
+    <item quantity="other">%dsem</item>
   </plurals>
   <plurals name="timespan_days_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dд</item>
-    <item quantity="other">%dд</item>
+    <item quantity="one">%dd</item>
+    <item quantity="other">%dd</item>
   </plurals>
   <plurals name="timespan_hours_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dч</item>
-    <item quantity="other">%dч</item>
+    <item quantity="one">%dh</item>
+    <item quantity="other">%dh</item>
   </plurals>
   <plurals name="timespan_minutes_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dмин</item>
-    <item quantity="other">%dмин</item>
+    <item quantity="one">%dm</item>
+    <item quantity="other">%dm</item>
   </plurals>
   <plurals name="timespan_seconds_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dсек</item>
-    <item quantity="other">%dсек</item>
+    <item quantity="one">%ds</item>
+    <item quantity="other">%ds</item>
   </plurals>
 </resources>
