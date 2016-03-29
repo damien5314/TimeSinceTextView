@@ -18,7 +18,7 @@ Simply declare a `TimeSinceTextView` in XML or create one in code.
   android:layout_width="wrap_content"
   android:layout_height="wrap_content" />
 ```
-  
+
 Then call `setDate(Date)` or `setDate(long)` with a Unix timestamp, and the text will be automatically generated and set to the view.
 
 ```java
@@ -57,7 +57,6 @@ dependencies {
   compile 'com.github.damien5314:TimeSinceTextView:1.1.1'
 }
 ```
-
 
 ## Screenshot
 
