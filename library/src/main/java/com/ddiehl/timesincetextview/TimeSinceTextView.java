@@ -56,7 +56,7 @@ public class TimeSinceTextView extends TextView {
   private void init(AttributeSet attrs) {
     mAbbreviated = attrs.getAttributeBooleanValue(
         "http://schemas.android.com/apk/res-auto",
-        "abbreviated", false);
+        "tstv_abbreviated", false);
   }
 
   public void setDate(Date date) {

@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="com.ddiehl.timesincetextview.sample.MainActivity">
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
@@ -28,8 +28,8 @@
       android:id="@+id/time_seconds_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_minutes"
@@ -41,8 +41,8 @@
       android:id="@+id/time_minutes_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_hours"
@@ -54,8 +54,8 @@
       android:id="@+id/time_hours_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_days"
@@ -67,8 +67,8 @@
       android:id="@+id/time_days_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_weeks"
@@ -80,8 +80,8 @@
       android:id="@+id/time_weeks_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_months"
@@ -93,8 +93,8 @@
       android:id="@+id/time_months_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
   <com.ddiehl.timesincetextview.TimeSinceTextView
       android:id="@+id/time_years"
@@ -106,7 +106,7 @@
       android:id="@+id/time_years_abbreviated"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:abbreviated="true"
-      android:textAppearance="@android:style/TextAppearance.Medium"/>
+      android:textAppearance="@android:style/TextAppearance.Medium"
+      app:tstv_abbreviated="true"/>
 
 </LinearLayout>
