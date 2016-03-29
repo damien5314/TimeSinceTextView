@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="timespan_now">ahora mismo</string>
+  <plurals name="timespan_years">
+    <item quantity="one">hace %d año</item>
+    <item quantity="other">hace %d años</item>
+  </plurals>
+  <plurals name="timespan_months">
+    <item quantity="one">hace %d mes</item>
+    <item quantity="other">hace %d meses</item>
+  </plurals>
+  <plurals name="timespan_weeks">
+    <item quantity="one">hace %d semana</item>
+    <item quantity="other">hace %d semanas</item>
+  </plurals>
+  <plurals name="timespan_days">
+    <item quantity="one">hace %d día</item>
+    <item quantity="other">hace %d días</item>
+  </plurals>
+  <plurals name="timespan_hours">
+    <item quantity="one">hace %d hora</item>
+    <item quantity="other">hace %d horas</item>
+  </plurals>
+  <plurals name="timespan_minutes">
+    <item quantity="one">hace %d minuto</item>
+    <item quantity="other">hace %d minutos</item>
+  </plurals>
+  <plurals name="timespan_seconds">
+    <item quantity="one">hace %d segundo</item>
+    <item quantity="other">hace %d segundos</item>
+  </plurals>
+  <plurals name="timespan_years_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dг</item>
+    <item quantity="other">%dг</item>
+  </plurals>
+  <plurals name="timespan_months_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dмес</item>
+    <item quantity="other">%dмес</item>
+  </plurals>
+  <plurals name="timespan_weeks_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dнед</item>
+    <item quantity="other">%dнед</item>
+  </plurals>
+  <plurals name="timespan_days_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dд</item>
+    <item quantity="other">%dд</item>
+  </plurals>
+  <plurals name="timespan_hours_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dч</item>
+    <item quantity="other">%dч</item>
+  </plurals>
+  <plurals name="timespan_minutes_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dмин</item>
+    <item quantity="other">%dмин</item>
+  </plurals>
+  <plurals name="timespan_seconds_abbr" tools:ignore="MissingQuantity">
+    <item quantity="one">%dсек</item>
+    <item quantity="other">%dсек</item>
+  </plurals>
+</resources>
