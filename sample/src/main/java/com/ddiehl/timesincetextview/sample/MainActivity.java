@@ -8,6 +8,8 @@ import com.ddiehl.timesincetextview.TimeSinceTextView;
 
 import java.util.Date;
 
+import timesincetextview.sample.R;
+
 public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
