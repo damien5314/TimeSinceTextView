@@ -2,6 +2,7 @@ package com.ddiehl.timesincetextview;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -35,28 +36,31 @@ public class TimeSinceTextView extends TextView {
 
   public TimeSinceTextView(Context context) {
     super(context);
+    init(context, null, 0, 0);
   }
 
   public TimeSinceTextView(Context context, AttributeSet attrs) {
     super(context, attrs);
-    init(attrs);
+    init(context, attrs, 0, 0);
   }
 
   public TimeSinceTextView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
-    init(attrs);
+    init(context, attrs, defStyleAttr, 0);
   }
 
   @TargetApi(Build.VERSION_CODES.LOLLIPOP)
   public TimeSinceTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
     super(context, attrs, defStyleAttr, defStyleRes);
-    init(attrs);
+    init(context, attrs, defStyleAttr, defStyleRes);
   }
 
-  private void init(AttributeSet attrs) {
-    mAbbreviated = attrs.getAttributeBooleanValue(
-        "http://schemas.android.com/apk/res-auto",
-        "tstv_abbreviated", false);
+  private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    if (attrs != null) {
+      TypedArray ta = context.getTheme()
+          .obtainStyledAttributes(attrs, R.styleable.TimeSinceTextView, 0, 0);
+      mAbbreviated = ta.getBoolean(R.styleable.TimeSinceTextView_tstv_abbreviated, false);
+    }
   }
 
   public void setDate(Date date) {
