@@ -41,22 +41,12 @@ The class `TimeSince` also contains static methods which can be used to retrieve
 
 [![Release](https://jitpack.io/v/damien5314/TimeSinceTextView.svg)](https://jitpack.io/#damien5314/TimeSinceTextView)
 
-Add the jitpack distribution URL to your root build.gradle,
-
 ```gradle
-allprojects {
-  repositories {
-    ...
+repositories {
     maven { url "https://jitpack.io" }
-  }
 }
-```
-    
-as well as the dependency in your module build.gradle file.
-```gradle
 dependencies {
-  ...
-  compile 'com.github.damien5314:TimeSinceTextView:1.1.1'
+  compile 'com.github.damien5314:TimeSinceTextView:1.+'
 }
 ```
 
