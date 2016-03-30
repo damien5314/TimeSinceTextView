@@ -76,4 +76,6 @@ public class TimeSince {
     return String.format(output, unit);
   }
 
+  private TimeSince() { }
+
 }
