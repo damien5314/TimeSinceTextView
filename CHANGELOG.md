@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+Version 1.2.3 *(2016-03-29)*
+----------------------------------
+* Nothing, Jitpack won't build Version 1.2.2 for some reason
+
 Version 1.2.2 *(2016-03-29)*
 ----------------------------------
 * Removed abbreviations from Japanese translation because it's already short enough
