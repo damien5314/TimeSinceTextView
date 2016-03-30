@@ -25,11 +25,26 @@ public class TimeSince {
 
   private static int NOW_THRESHOLD_SECONDS = 10;
 
+  /**
+   * Returns a formatted date string with respect to the current time, optionally abbreviated.
+   * @param utc Unix timestamp of the start date
+   * @param abbreviated True if we should display the date string in abbreviated form, false otherwise
+   * @param context {@link android.content.Context} with access to application {@link android.content.res.Resources}
+   * @return String formatted in the form of `X days ago` or locale equivalent
+   */
   public static String getFormattedDateString(long utc, boolean abbreviated, Context context) {
     long currentTime = System.currentTimeMillis() / 1000;
     return getFormattedDateString(utc, currentTime, abbreviated, context);
   }
 
+  /**
+   * Returns a formatted date string with respect to the given time, optionally abbreviated.
+   * @param start Unix timestamp of the start date
+   * @param end Unix timestamp of the end date
+   * @param abbreviated True if we should display the date string in abbreviated form, false otherwise
+   * @param context {@link android.content.Context} with access to application {@link android.content.res.Resources}
+   * @return String formatted in the form of `X days ago` or locale equivalent
+   */
   public static String getFormattedDateString(
       long start, long end, boolean abbreviated, Context context) {
     int seconds = (int) (end - start);

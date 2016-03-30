@@ -43,14 +43,25 @@ public class TimeSinceTextView extends TextView {
     }
   }
 
+  /**
+   * @return Unix timestamp associated with this instance, or seconds since January 1, 1970
+   */
   public long getDate() {
     return mTimestamp;
   }
 
+  /**
+   * Sets the timestamp displayed by this view
+   * @param date {@link java.util.Date} from which to calculate time passed
+   */
   public void setDate(Date date) {
     setDate(date.getTime() / 1000);
   }
 
+  /**
+   * Sets the timestamp displayed by this view
+   * @param utc Unix timestamp from which to calculate time passed
+   */
   public void setDate(long utc) {
     mTimestamp = utc;
     setText(
@@ -58,13 +69,39 @@ public class TimeSinceTextView extends TextView {
             utc, mAbbreviated, getContext()));
   }
 
+  /**
+   * @return True if view is displaying abbreviated timestamp strings, otherwise false
+   */
   public boolean isAbbreviated() {
     return mAbbreviated;
   }
 
+  /**
+   * Set to true if the view should display abbreviated timestamp strings
+   * @param b True if the view should display abbreviated timestamp strings
+   */
   public void isAbbreviated(boolean b) {
     mAbbreviated = b;
     invalidate();
     requestLayout();
+  }
+
+  /**
+   * @deprecated
+   * Use {@link TimeSince#getFormattedDateString(long, boolean, Context)}
+   */
+  @Deprecated
+  public static String getFormattedDateString(long utc, boolean abbreviated, Context context) {
+    return TimeSince.getFormattedDateString(utc, abbreviated, context);
+  }
+
+  /**
+   * @deprecated
+   * Use {@link TimeSince#getFormattedDateString(long, long, boolean, Context)}
+   */
+  @Deprecated
+  public static String getFormattedDateString(
+      long start, long end, boolean abbreviated, Context context) {
+    return TimeSince.getFormattedDateString(start, end, abbreviated, context);
   }
 }
