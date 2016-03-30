@@ -4,7 +4,7 @@ This is a subclass of android.widget.TextView that exposes a method `setDate()` 
 
 [Changelog](CHANGELOG.md)
 
-[Javadoc](https://jitpack.io/com/github/damien5314/TimeSinceTextView/1.2.0/javadoc/)
+[Javadoc](https://jitpack.io/com/github/damien5314/TimeSinceTextView/1.2.1/javadoc/)
 
 ## Comparison to DateUtils.getRelativeTimeSpanString
 
