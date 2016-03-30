@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+Version 1.2.1 *(2016-03-29)*
+----------------------------------
+* Renamed string resources to avoid clashing in other libraries
+
 Version 1.2.0 *(2016-03-29)*
 ----------------------------------
 * Added Spanish translation (courtesy of @JorgeDLS)
