@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="timespan_now">только что</string>
-    <plurals name="timespan_years">
+    <string name="tstv_timespan_now">только что</string>
+    <plurals name="tstv_timespan_years">
         <item quantity="one">%d год назад</item>
         <item quantity="few">%d года назад</item>
         <item quantity="many">%d лет назад</item>
         <item quantity="other">%d лет назад</item>
     </plurals>
-    <plurals name="timespan_months">
+    <plurals name="tstv_timespan_months">
         <item quantity="one">%d месяц назад</item>
         <item quantity="few">%d месяца назад</item>
         <item quantity="many">%d месяцев назад</item>
         <item quantity="other">%d месяцев назад</item>
     </plurals>
-    <plurals name="timespan_weeks">
+    <plurals name="tstv_timespan_weeks">
         <item quantity="one">%d неделю назад</item>
         <item quantity="few">%d недели назад</item>
         <item quantity="many">%d недель назад</item>
         <item quantity="other">%d недель назад</item>
     </plurals>
-    <plurals name="timespan_days">
+    <plurals name="tstv_timespan_days">
         <item quantity="one">%d день назад</item>
         <item quantity="few">%d дня назад</item>
         <item quantity="many">%d дней назад</item>
         <item quantity="other">%d дней назад</item>
     </plurals>
-    <plurals name="timespan_hours">
+    <plurals name="tstv_timespan_hours">
         <item quantity="one">%d час назад</item>
         <item quantity="few">%d часа назад</item>
         <item quantity="many">%d часов назад</item>
         <item quantity="other">%d часов назад</item>
     </plurals>
-    <plurals name="timespan_minutes">
+    <plurals name="tstv_timespan_minutes">
         <item quantity="one">%d минуту назад</item>
         <item quantity="few">%d минуты назад</item>
         <item quantity="many">%d минут назад</item>
         <item quantity="other">%d минут назад</item>
     </plurals>
-    <plurals name="timespan_seconds">
+    <plurals name="tstv_timespan_seconds">
         <item quantity="one">%d секунду назад</item>
         <item quantity="few">%d секунды назад</item>
         <item quantity="many">%d секунд назад</item>
         <item quantity="other">%d секунд назад</item>
     </plurals>
-    <plurals name="timespan_years_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_years_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dг</item>
         <item quantity="other">%dг</item>
     </plurals>
-    <plurals name="timespan_months_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_months_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dмес</item>
         <item quantity="other">%dмес</item>
     </plurals>
-    <plurals name="timespan_weeks_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_weeks_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dнед</item>
         <item quantity="other">%dнед</item>
     </plurals>
-    <plurals name="timespan_days_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_days_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dд</item>
         <item quantity="other">%dд</item>
     </plurals>
-    <plurals name="timespan_hours_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_hours_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dч</item>
         <item quantity="other">%dч</item>
     </plurals>
-    <plurals name="timespan_minutes_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_minutes_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dмин</item>
         <item quantity="other">%dмин</item>
     </plurals>
-    <plurals name="timespan_seconds_abbr" tools:ignore="MissingQuantity">
+    <plurals name="tstv_timespan_seconds_abbr" tools:ignore="MissingQuantity">
         <item quantity="one">%dсек</item>
         <item quantity="other">%dсек</item>
     </plurals>

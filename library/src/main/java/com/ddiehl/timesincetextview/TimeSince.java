@@ -4,23 +4,23 @@ import android.content.Context;
 
 public class TimeSince {
   private static final int[] TIMESPAN_IDS = {
-      R.plurals.timespan_years,
-      R.plurals.timespan_months,
-      R.plurals.timespan_weeks,
-      R.plurals.timespan_days,
-      R.plurals.timespan_hours,
-      R.plurals.timespan_minutes,
-      R.plurals.timespan_seconds
+      R.plurals.tstv_timespan_years,
+      R.plurals.tstv_timespan_months,
+      R.plurals.tstv_timespan_weeks,
+      R.plurals.tstv_timespan_days,
+      R.plurals.tstv_timespan_hours,
+      R.plurals.tstv_timespan_minutes,
+      R.plurals.tstv_timespan_seconds
   };
 
   private static final int[] TIMESPAN_IDS_ABBR = {
-      R.plurals.timespan_years_abbr,
-      R.plurals.timespan_months_abbr,
-      R.plurals.timespan_weeks_abbr,
-      R.plurals.timespan_days_abbr,
-      R.plurals.timespan_hours_abbr,
-      R.plurals.timespan_minutes_abbr,
-      R.plurals.timespan_seconds_abbr
+      R.plurals.tstv_timespan_years_abbr,
+      R.plurals.tstv_timespan_months_abbr,
+      R.plurals.tstv_timespan_weeks_abbr,
+      R.plurals.tstv_timespan_days_abbr,
+      R.plurals.tstv_timespan_hours_abbr,
+      R.plurals.tstv_timespan_minutes_abbr,
+      R.plurals.tstv_timespan_seconds_abbr
   };
 
   private static int NOW_THRESHOLD_SECONDS = 10;
@@ -70,7 +70,7 @@ public class TimeSince {
     }
 
     if (unit == seconds && seconds <= NOW_THRESHOLD_SECONDS) {
-      output = context.getString(R.string.timespan_now);
+      output = context.getString(R.string.tstv_timespan_now);
     }
 
     return String.format(output, unit);

@@ -46,7 +46,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 10, mTime, false, mContext),
-        is(mContext.getString(R.string.timespan_now)));
+        is(mContext.getString(R.string.tstv_timespan_now)));
   }
 
   @Test
@@ -54,7 +54,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 11, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_seconds, 11)));
+        is(getQuantityString(R.plurals.tstv_timespan_seconds, 11)));
   }
 
   @Test
@@ -62,7 +62,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 59, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_seconds, 59)));
+        is(getQuantityString(R.plurals.tstv_timespan_seconds, 59)));
   }
 
   @Test
@@ -70,7 +70,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_minutes, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_minutes, 1)));
   }
 
   @Test
@@ -78,7 +78,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 60 * 60 + 1, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_minutes, 59)));
+        is(getQuantityString(R.plurals.tstv_timespan_minutes, 59)));
   }
 
   @Test
@@ -86,7 +86,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_hours, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_hours, 1)));
   }
 
   @Test
@@ -94,7 +94,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 24 * 60 * 60 + 1, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_hours, 23)));
+        is(getQuantityString(R.plurals.tstv_timespan_hours, 23)));
   }
 
   @Test
@@ -102,7 +102,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 24 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_days, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_days, 1)));
   }
 
   @Test
@@ -110,7 +110,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 7 * 24 * 60 * 60 + 1, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_days, 6)));
+        is(getQuantityString(R.plurals.tstv_timespan_days, 6)));
   }
 
   @Test
@@ -118,7 +118,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 7 * 24 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_weeks, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_weeks, 1)));
   }
 
   @Test
@@ -126,7 +126,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 30 * 24 * 60 * 60 + 1, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_weeks, 4)));
+        is(getQuantityString(R.plurals.tstv_timespan_weeks, 4)));
   }
 
   @Test
@@ -134,7 +134,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 30 * 24 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_months, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_months, 1)));
   }
 
   @Test
@@ -142,7 +142,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 365 * 24 * 60 * 60 + 1, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_months, 12)));
+        is(getQuantityString(R.plurals.tstv_timespan_months, 12)));
   }
 
   @Test
@@ -150,7 +150,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 365 * 24 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_years, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_years, 1)));
   }
 
   @Test
@@ -158,7 +158,7 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 30 * 365 * 24 * 60 * 60, mTime, false, mContext),
-        is(getQuantityString(R.plurals.timespan_years, 30)));
+        is(getQuantityString(R.plurals.tstv_timespan_years, 30)));
   }
 
   @Test
@@ -166,31 +166,31 @@ public class TimeSinceTextViewAndroidTest {
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 59, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_seconds_abbr, 59)));
+        is(getQuantityString(R.plurals.tstv_timespan_seconds_abbr, 59)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_minutes_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_minutes_abbr, 1)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 60 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_hours_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_hours_abbr, 1)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 24 * 60 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_days_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_days_abbr, 1)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 7 * 24 * 60 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_weeks_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_weeks_abbr, 1)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 30 * 24 * 60 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_months_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_months_abbr, 1)));
     assertThat(
         TimeSince.getFormattedDateString(
             mTime - 1 * 365 * 24 * 60 * 60, mTime, true, mContext),
-        is(getQuantityString(R.plurals.timespan_years_abbr, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_years_abbr, 1)));
   }
 
   @Test
@@ -199,7 +199,7 @@ public class TimeSinceTextViewAndroidTest {
     view.setDate(mTime - 1 * 24 * 60 * 60); // 1 day
     assertThat(
         view.getText().toString(),
-        is(getQuantityString(R.plurals.timespan_days, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_days, 1)));
   }
 
   @Test
@@ -208,7 +208,7 @@ public class TimeSinceTextViewAndroidTest {
     view.setDate(new Date((mTime - 1 * 24 * 60 * 60) * 1000)); // 1 day
     assertThat(
         view.getText().toString(),
-        is(getQuantityString(R.plurals.timespan_days, 1)));
+        is(getQuantityString(R.plurals.tstv_timespan_days, 1)));
   }
 
   private static Matcher<String> is(String matcher, Object... args) {
