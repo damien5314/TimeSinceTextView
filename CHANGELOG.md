@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+Version 1.2.2 *(2016-03-29)*
+----------------------------------
+* Removed abbreviations from Japanese translation because it's already short enough
+
 Version 1.2.1 *(2016-03-29)*
 ----------------------------------
 * Renamed string resources to avoid clashing in other libraries
