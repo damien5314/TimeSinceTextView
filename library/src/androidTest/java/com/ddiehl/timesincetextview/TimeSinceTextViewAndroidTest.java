@@ -8,7 +8,9 @@ import android.support.test.runner.AndroidJUnit4;
 import org.hamcrest.Matcher;
 import org.hamcrest.core.Is;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -18,17 +20,25 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @RunWith(AndroidJUnit4.class)
 public class TimeSinceTextViewAndroidTest {
-  private Context mContext;
+  private static Context mContext;
   private final long mTime = new Date().getTime() / 1000;
+
+  @BeforeClass
+  public static void setUpClass() {
+    mContext = InstrumentationRegistry.getContext();
+  }
+
+  @AfterClass
+  public static void tearDownClass() {
+
+  }
 
   @Before
   public void setUp() {
-    mContext = InstrumentationRegistry.getContext();
   }
 
   @After
   public void tearDown() {
-
   }
 
   @Test
