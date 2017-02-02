@@ -1,7 +1,6 @@
-<manifest
-    package="com.ddiehl.timesincetextview"
+<manifest package="com.ddiehl.timesincetextview"
     xmlns:tools="http://schemas.android.com/tools">
 
-  <uses-sdk tools:overrideLibrary="android.support.test, android.support.test.rule, android.app"/>
+    <uses-sdk tools:overrideLibrary="android.support.test, android.support.test.rule, android.app" />
 
 </manifest>

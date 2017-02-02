@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-  <string name="tstv_timespan_now">ahora mismo</string>
-  <plurals name="tstv_timespan_years">
-    <item quantity="one">hace %d año</item>
-    <item quantity="other">hace %d años</item>
-  </plurals>
-  <plurals name="tstv_timespan_months">
-    <item quantity="one">hace %d mes</item>
-    <item quantity="other">hace %d meses</item>
-  </plurals>
-  <plurals name="tstv_timespan_weeks">
-    <item quantity="one">hace %d semana</item>
-    <item quantity="other">hace %d semanas</item>
-  </plurals>
-  <plurals name="tstv_timespan_days">
-    <item quantity="one">hace %d día</item>
-    <item quantity="other">hace %d días</item>
-  </plurals>
-  <plurals name="tstv_timespan_hours">
-    <item quantity="one">hace %d hora</item>
-    <item quantity="other">hace %d horas</item>
-  </plurals>
-  <plurals name="tstv_timespan_minutes">
-    <item quantity="one">hace %d minuto</item>
-    <item quantity="other">hace %d minutos</item>
-  </plurals>
-  <plurals name="tstv_timespan_seconds">
-    <item quantity="one">hace %d segundo</item>
-    <item quantity="other">hace %d segundos</item>
-  </plurals>
-  <plurals name="tstv_timespan_years_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%da</item>
-    <item quantity="other">%da</item>
-  </plurals>
-  <plurals name="tstv_timespan_months_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dms</item>
-    <item quantity="other">%dms</item>
-  </plurals>
-  <plurals name="tstv_timespan_weeks_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dsem</item>
-    <item quantity="other">%dsem</item>
-  </plurals>
-  <plurals name="tstv_timespan_days_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dd</item>
-    <item quantity="other">%dd</item>
-  </plurals>
-  <plurals name="tstv_timespan_hours_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dh</item>
-    <item quantity="other">%dh</item>
-  </plurals>
-  <plurals name="tstv_timespan_minutes_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%dm</item>
-    <item quantity="other">%dm</item>
-  </plurals>
-  <plurals name="tstv_timespan_seconds_abbr" tools:ignore="MissingQuantity">
-    <item quantity="one">%ds</item>
-    <item quantity="other">%ds</item>
-  </plurals>
+    <string name="tstv_timespan_now">ahora mismo</string>
+    <plurals name="tstv_timespan_years">
+        <item quantity="one">hace %d año</item>
+        <item quantity="other">hace %d años</item>
+    </plurals>
+    <plurals name="tstv_timespan_months">
+        <item quantity="one">hace %d mes</item>
+        <item quantity="other">hace %d meses</item>
+    </plurals>
+    <plurals name="tstv_timespan_weeks">
+        <item quantity="one">hace %d semana</item>
+        <item quantity="other">hace %d semanas</item>
+    </plurals>
+    <plurals name="tstv_timespan_days">
+        <item quantity="one">hace %d día</item>
+        <item quantity="other">hace %d días</item>
+    </plurals>
+    <plurals name="tstv_timespan_hours">
+        <item quantity="one">hace %d hora</item>
+        <item quantity="other">hace %d horas</item>
+    </plurals>
+    <plurals name="tstv_timespan_minutes">
+        <item quantity="one">hace %d minuto</item>
+        <item quantity="other">hace %d minutos</item>
+    </plurals>
+    <plurals name="tstv_timespan_seconds">
+        <item quantity="one">hace %d segundo</item>
+        <item quantity="other">hace %d segundos</item>
+    </plurals>
+    <plurals name="tstv_timespan_years_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%da</item>
+        <item quantity="other">%da</item>
+    </plurals>
+    <plurals name="tstv_timespan_months_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%dms</item>
+        <item quantity="other">%dms</item>
+    </plurals>
+    <plurals name="tstv_timespan_weeks_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%dsem</item>
+        <item quantity="other">%dsem</item>
+    </plurals>
+    <plurals name="tstv_timespan_days_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%dd</item>
+        <item quantity="other">%dd</item>
+    </plurals>
+    <plurals name="tstv_timespan_hours_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%dh</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tstv_timespan_minutes_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%dm</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tstv_timespan_seconds_abbr" tools:ignore="MissingQuantity">
+        <item quantity="one">%ds</item>
+        <item quantity="other">%ds</item>
+    </plurals>
 </resources>

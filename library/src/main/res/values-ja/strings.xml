@@ -1,45 +1,45 @@
 <resources>
-  <string name="tstv_timespan_now">たった今</string>
-  <plurals name="tstv_timespan_years">
-    <item quantity="other">%d数年前</item>
-  </plurals>
-  <plurals name="tstv_timespan_months">
-    <item quantity="other">%d数か月前</item>
-  </plurals>
-  <plurals name="tstv_timespan_weeks">
-    <item quantity="other">%d数週間前</item>
-  </plurals>
-  <plurals name="tstv_timespan_days">
-    <item quantity="other">%d数日前</item>
-  </plurals>
-  <plurals name="tstv_timespan_hours">
-    <item quantity="other">%d時間前</item>
-  </plurals>
-  <plurals name="tstv_timespan_minutes">
-    <item quantity="other">%d数分前</item>
-  </plurals>
-  <plurals name="tstv_timespan_seconds">
-    <item quantity="other">%d秒前</item>
-  </plurals>
-  <plurals name="tstv_timespan_years_abbr">
-    <item quantity="other">%d数年前</item>
-  </plurals>
-  <plurals name="tstv_timespan_months_abbr">
-    <item quantity="other">%d数か月前</item>
-  </plurals>
-  <plurals name="tstv_timespan_weeks_abbr">
-    <item quantity="other">%d数週間前</item>
-  </plurals>
-  <plurals name="tstv_timespan_days_abbr">
-    <item quantity="other">%d数日前</item>
-  </plurals>
-  <plurals name="tstv_timespan_hours_abbr">
-    <item quantity="other">%d時間前</item>
-  </plurals>
-  <plurals name="tstv_timespan_minutes_abbr">
-    <item quantity="other">%d数分前</item>
-  </plurals>
-  <plurals name="tstv_timespan_seconds_abbr">
-    <item quantity="other">%d秒前</item>
-  </plurals>
+    <string name="tstv_timespan_now">たった今</string>
+    <plurals name="tstv_timespan_years">
+        <item quantity="other">%d数年前</item>
+    </plurals>
+    <plurals name="tstv_timespan_months">
+        <item quantity="other">%d数か月前</item>
+    </plurals>
+    <plurals name="tstv_timespan_weeks">
+        <item quantity="other">%d数週間前</item>
+    </plurals>
+    <plurals name="tstv_timespan_days">
+        <item quantity="other">%d数日前</item>
+    </plurals>
+    <plurals name="tstv_timespan_hours">
+        <item quantity="other">%d時間前</item>
+    </plurals>
+    <plurals name="tstv_timespan_minutes">
+        <item quantity="other">%d数分前</item>
+    </plurals>
+    <plurals name="tstv_timespan_seconds">
+        <item quantity="other">%d秒前</item>
+    </plurals>
+    <plurals name="tstv_timespan_years_abbr">
+        <item quantity="other">%d数年前</item>
+    </plurals>
+    <plurals name="tstv_timespan_months_abbr">
+        <item quantity="other">%d数か月前</item>
+    </plurals>
+    <plurals name="tstv_timespan_weeks_abbr">
+        <item quantity="other">%d数週間前</item>
+    </plurals>
+    <plurals name="tstv_timespan_days_abbr">
+        <item quantity="other">%d数日前</item>
+    </plurals>
+    <plurals name="tstv_timespan_hours_abbr">
+        <item quantity="other">%d時間前</item>
+    </plurals>
+    <plurals name="tstv_timespan_minutes_abbr">
+        <item quantity="other">%d数分前</item>
+    </plurals>
+    <plurals name="tstv_timespan_seconds_abbr">
+        <item quantity="other">%d秒前</item>
+    </plurals>
 </resources>
